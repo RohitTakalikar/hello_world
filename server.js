@@ -6,7 +6,7 @@ const fs = require("fs");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const FILE_NAME = "hello_world.bin";
+const FILE_NAME = "main.bin";
 const FILE_PATH = path.join(__dirname, "files", FILE_NAME);
 
 app.get("/", (req, res) => {
