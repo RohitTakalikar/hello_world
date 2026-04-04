@@ -6,6 +6,19 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.22.1"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohitTakalikar/hello_world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RohitTakalikar/hello_world/issues"
+  },
+  "homepage": "https://github.com/RohitTakalikar/hello_world#readme"
 }

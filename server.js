@@ -14,9 +14,16 @@ app.get("/", (req, res) => {
 });
 
 app.get("/download", (req, res) => {
+  console.log("---- DEBUG START ----");
+  console.log("__dirname:", __dirname);
+  console.log("FILE_PATH:", FILE_PATH);
+  console.log("Exists?:", fs.existsSync(FILE_PATH));
+  console.log("---- DEBUG END ----");
+
   if (!fs.existsSync(FILE_PATH)) {
     return res.status(404).send("File not found.");
   }
+
   res.download(FILE_PATH, FILE_NAME, (err) => {
     if (err) {
       console.error("Error sending file:", err);
